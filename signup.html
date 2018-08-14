@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="css/signin.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+   <meta name="google-signin-client_id" content="354034323316-crkljsls1bslbnsmvq530dq9ok19nvp1.apps.googleusercontent.com">
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+   <script src="https://apis.google.com/js/platform.js" async defer></script>
+   <script src="js/core.js"></script>
+</head>
+
+<body>
+<div class = "signInWindow">
+<h2>Sign up</h2>
+<hr>
+    <div id = "signInButton" class="g-signin2" data-onsuccess="signUp"></div>
+</div>
+<script>
+var userToken;
+
+function signUp(googleUser) {
+    userToken = googleUser.getAuthResponse().id_token;
+    $.ajax( { type : 'POST',
+        data : {userToken},
+        url  : 'php/signUpHandling.php',
+    
+        success: function (data) {
+            alert(data); },
+        error: function (xhr) {
+            alert(data);
+        }
+    });
+}
+</script>
+</body>
+</html>

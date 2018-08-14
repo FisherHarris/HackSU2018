@@ -1,0 +1,122 @@
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+body {
+    background-color: #ededed;
+}
+
+h1 {
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+}
+
+h2 {
+    color: white;
+    font-size: 25px;
+    left: 50%;
+    text-align:center;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-style: solid #ededed;
+    border-width:3px;
+    text-align:center;
+    border-radius: 25px
+} 
+
+p2 {
+    font-size: 12px;
+    position:absolute;
+    top: 10px;
+    right:15px;
+    vertical-align:middle;
+}
+
+.container {
+    height:100px;
+    background:#f46542;
+    width:100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    width: 100%
+}
+
+li {
+    float: left;
+    height: 50px;
+}
+
+li a {
+   
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li b {
+
+    color: white;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #f46542;
+}
+.active {
+    background-color: #111;
+}
+
+.footer {
+    height:40px;
+    background:#f46542;
+    width:100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+.g-signin2{
+  margin: 0 auto;
+
+}
+
+.g-signin2 > div{
+  left: 10px;
+  top: 7px;
+  vertical-align:middle;
+}
+
+.signInWindow {
+  position: absolute;
+  width: 500px;
+  height: 165px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  background: #f46542;
+  border-radius: 25px
+}
+
